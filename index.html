@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brandon Moe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Brandon Moe
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          brandongmoe93@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +17273555949
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a Class="topmenu" href="#projects">Projects</a>
+          <a Class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/animation/2023/06/13/15/13/15-13-34-881_512.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Brandon Moe! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a highly motivated beginning programmer with great problem solving skills and a willingness to learn.
+            I am eager to apply my problem solving skills to software development tasks, specifically in front-end and UX design.
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 year experience</p>
+        </div>
+        
+        <div class="skill">
+            <img SRC="https://www.bu.edu/lernet/artemis/years/2020/projects/FinalPresentations/HTML/css.jpg"/>
+            <h6>CSS</h6>
+            <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="https://www.singlegrain.com/wp-content/uploads/2019/02/SG-7-Mistakes-in-UI-and-UX-That-Are-Costing-You-Engagement.png"/>
+            <h6>UI/UX Design</h6>
+            <p>2 years experience</p>
+        </div>
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Pong</h3>
+            <ul>
+              <li>Developed an easy pong game</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Unit Conversion Website</h3>
+            <ul>
+              <li>creatingCreated a simple web page Unit Converter application that converts metric units to imperial units</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fashion Website</h3>
+            <ul>
+              <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Brandon is a very quick learner and quickly grasps key concepts of Web development. 
+          He has a great attitude & is an excellent team player. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Brandon has been an awesome experience. 
+          He is highly knowledgable and always goes the extra step to make sure everything is right. 
+          For any future projects that need her expertise I would definitely want to work with him again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Brandon during the initial phase of our venture which needed Web development. 
+          He is a committed resource who has in depth knowledge about the domain. 
+          He will be an asset for any organisation! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
